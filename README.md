@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# EduSpark — Smart School Management Platform
+Modern AI-Powered School Management SaaS Website built using React, Vite, Tailwind CSS, and TypeScript.
+---
+## Features
+* Responsive SaaS UI
+* Multi-page website
+* Home Page
+* About Page
+* Contact Page
+* Sticky Navbar
+* Testimonials Section
+* FAQ Section
+* Statistics Dashboard
+* Professional Footer
+* Smooth Animations
+* Mobile Responsive
+* Supabase Integration
+---
+## Tech Stack
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* React Router
+* Framer Motion
+* Supabase
+---
+## Installation
+Clone repository:
+git clone YOUR_GITHUB_REPOSITORY_LINK
+Move into project:
+cd project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Install dependencies:
+npm install
 
-Currently, two official plugins are available:
+Run locally:
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Open in browser:
+http://localhost:5173
+---
 
-## React Compiler
+## Folder Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+src/
+├── components/
+├── pages/
+├── layouts/
+├── assets/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Deployment
+Deployed using Vercel or Netlify
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Author
+Mubarak Khan
